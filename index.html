@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<div class="main-block" id="form">
+
+  <form action="connect.php" method="post">
+    <h1>CV Formulaire</h1>
+    <div class="info">
+
+      <input class="fname" type="text" name="Fname" placeholder="Full name" id="Fname">
+      <input type="number" name="CIN" placeholder="CIN" id="CIN">
+      <input type="date" name="dateB" placeholder="Date de naissance" id="dateB">
+      <input type="email" name="email" placeholder="email" id="email">
+      <select name="Domaine" id="Domaine" style="width:100%">
+        <optgroup label="Domaine" >
+          <option value="Arch">Architecture</option>
+          <option value="GI">Génie industrielle</option>
+          <option value="M">Mécatronique</option>
+          <option value="GL">Génie Logiciel</option>
+          <option value="F">Finance</option>
+          <option value="BG">Big data</option>
+          <option value="DS">Data Science</option>
+          <option value="DM">Dev mobile</option>
+          <option value="DW">Dev web</option>
+          <option value="SE">Systeme Embarqué</option>
+
+        </optgroup>
+      </select>
+      <input type="number" name="number" placeholder="number" required pattern="(9|2|5)[0-9][0-9][0-9][0-9][0-9][0-9][0-9]" id="number">
+
+      <input type="file" name="Curriculum vitae" placeholder="Curriculum vitae" >
+
+      <table style="width:100%">
+        <thead>
+
+        <tr>
+
+
+          <th colspan="4">Langue</th>
+          <th colspan="14">Niveau</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td colspan="4">French</td>
+          <td colspan="14">
+
+            <div class="clearfix">
+
+              <label for="B2f"  class="radio-inline"
+              ><input
+                type="radio"
+                name="nivF"
+                value="B2"
+                id="B2f"
+
+              />B2</label
+              >
+              <label for="C1f" class="radio-inline"
+              ><input
+                type="radio"
+                name="nivF"
+                value="C1"
+                id="C1f"
+
+              />C1</label
+              >
+              <label for="C2f" class="radio-inline"
+              ><input
+                type="radio"
+                name="nivF"
+                value="C2"
+                id="C2f"
+              />C2</label>
+
+            </div>
+
+          </td>
+
+
+        </tr>
+
+
+        <tr>
+          <td colspan="4">English</td>
+          <td colspan="14" >
+
+
+              <div class="clearfix">
+
+                <label for="B2e"  class="radio-inline"
+                ><input
+                  type="radio"
+                  name="nivE"
+                  value="B2"
+                  id="B2e"
+
+                />B2</label
+                >
+                <label for="C1e" class="radio-inline"
+                ><input
+                  type="radio"
+                  name="nivE"
+                  value="C1"
+                  id="C1e"
+
+                />C1</label
+                >
+                <label for="C2e" class="radio-inline"
+                ><input
+                  type="radio"
+                  name="nivE"
+                  value="C2"
+                  id="C2e"
+                />C2</label>
+
+              </div>
+          </td>
+
+
+        </tr>
+        </tbody>
+      </table>
+
+      <table style="width:100%">
+        <thead>
+
+        <tr>
+
+
+          <th colspan="4">Poste</th>
+          <th colspan="4">Nom du Société</th>
+          <th colspan="4">From</th>
+          <th colspan="4">To</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td colspan="4"><select name="poste1" id="poste1" style="width:100%">
+            <optgroup label="poste1">
+              <option value="ING">Ingénieur</option>
+              <option value="TS">technicien supérieur</option>
+              <option value="T">technicien</option>
+              <option value="OUV">ouvrier</option>
+              <option value="ADJ">Adjoint</option>
+              <option value="Arch">Architecte</option>
+
+
+            </optgroup>
+          </select></td>
+          <td colspan="4"><input type="text" name="societe1" placeholder="..." ></td>
+          <td colspan="4"><input type="date" name="dateE1" ></td>
+          <td colspan="4"><input type="date" name="dateS1" ></td>
+
+        </tr>
+        <tr>
+          <td colspan="4"><select name="poste2" id="poste2" style="width:100%">
+            <optgroup label="poste2">
+              <option value="ING">Ingénieur</option>
+              <option value="TS">technicien supérieur</option>
+              <option value="T">technicien</option>
+              <option value="OUV">ouvrier</option>
+              <option value="ADJ">Adjoint</option>
+              <option value="Arch">Architecte</option>
+
+
+            </optgroup>
+          </select></td>
+          <td colspan="4"><input type="text" name="societe2" placeholder="..." ></td>
+          <td colspan="4"><input type="date" name="dateE2" ></td>
+          <td colspan="4"><input type="date" name="dateS2" ></td>
+
+        </tr>
+        <tr>
+          <td colspan="4"><select name="poste3" style="width:100%">
+            <optgroup label="poste3">
+              <option value="ING">Ingénieur</option>
+              <option value="TS">technicien supérieur</option>
+              <option value="T">technicien</option>
+              <option value="OUV">ouvrier</option>
+              <option value="ADJ">Adjoint</option>
+              <option value="Arch">Architecte</option>
+
+
+            </optgroup>
+          </select></td>
+          <td colspan="4"><input type="text" name="societe3" placeholder="..." ></td>
+          <td colspan="4"><input type="date" name="dateE3" placeholder="../../20.."></td>
+          <td colspan="4"><input type="date" name="dateS3" placeholder="../../20.."></td>
+
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <button type="submit" href="/">Submit</button>
+  </form>
+</div>
+</body>
+<a href="logout.php">Logout</a>
+</html>
